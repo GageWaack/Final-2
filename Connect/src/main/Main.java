@@ -1,4 +1,6 @@
-import java.util.Scanner;
+package main;
+
+import java.util.Scanner; 
 public class Main 
 {
     public static void main (String[]args)
@@ -14,6 +16,7 @@ public class Main
     	{
     		//displaying board
     		PlainBoard.displayBetterBoard();
+    		testBoard.displayBoard();
     	}   
     	else if (input == 999)
     	{
@@ -23,5 +26,5 @@ public class Main
     	{
     		System.out.println("Cant read? ");
     	}
-    }  0 
+    }  
 }
