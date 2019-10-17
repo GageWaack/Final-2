@@ -6,6 +6,7 @@ public class PlainBoard
     public static void displayBetterBoard() 
     {
     	
+    	//Displays big board
     	
 		for(int j =0; j< 15; ++j) 
 		{
@@ -30,9 +31,14 @@ public class PlainBoard
 		for (int i = 0; i < 113; ++i) 
 		{
 			System.out.print("_");
-		}				
+		}
+		
+		//Spacing between the boards
 		
 		System.out.println(" ");
+		
+		//Displays small board
+		
     	int[] a = new int[9];
         a[0] = a[5] = a[6] = 10;
         a[3] = a[7] = 100;
