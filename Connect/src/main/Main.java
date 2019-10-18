@@ -16,7 +16,7 @@ public class Main
     	{
     		//displaying board
     		PlainBoard.displayBetterBoard(input);
-    		//testBoard.displayBoard();
+    		testBoard.displayBoard();
     	}   
     	else if (input == 999)
     	{
