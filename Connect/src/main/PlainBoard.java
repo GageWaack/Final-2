@@ -1,43 +1,113 @@
 package main;
-
+import java.awt.*;       // Using AWT's Graphics and Color
+import java.awt.event.*; // Using AWT event classes and listener interfaces
+import javax.swing.*;    // Using Swing's components and containers
 
 public class PlainBoard 
 {
-    public static void displayBetterBoard() 
+
+	public static void displayBetterBoard(int input) 
     {
-    	
-    	//Displays big board
-    	
-		for(int j =0; j< 15; ++j) 
+		if (input == 1)
 		{
-		System.out.println("|	  			 |			    			|				|");
+			System.out.println("|							   /	|									  |										   |");
+			System.out.println("|							  /	    |									  |										   |");
+			System.out.println("|							 /		|									  |										   |");
+			System.out.println("|							/		|									  |										   |");
+			System.out.println("|						   /		|									  |										   |");
+			System.out.println("|						  /			|									  |										   |");
+			System.out.println("|						 /			|									  |										   |");
+			System.out.println("|						/			|									  |										   |");
+			System.out.println("|					   /			|									  |										   |");
+			System.out.println("|					  /				|									  |										   |");
+			System.out.println("|					 /				|									  |										   |");
+			System.out.println("|					/				|									  |										   |");
+			System.out.println("|				   /				|									  |										   |");
+			System.out.println("|				  /					|									  |										   |");
+			System.out.println("|				 /					|									  |										   |");
+			System.out.println("________________/_________________________________________________________________________________________________");
+			System.out.println("|									|									  |										   |");
+			System.out.println("|									|									  |										   |");
+			System.out.println("|									|									  |										   |");
+			System.out.println("|									|									  |										   |");
+			System.out.println("|									|									  |										   |");
+			System.out.println("|									|									  |										   |");
+			System.out.println("|									|									  |										   |");
+			System.out.println("|									|									  |										   |");
+			System.out.println("|									|									  |										   |");
+			System.out.println("|									|									  |										   |");
+			System.out.println("|									|									  |										   |");
+			System.out.println("|									|									  |										   |");
+			System.out.println("|									|									  |										   |");
+			System.out.println("|									|									  |										   |");
+			System.out.println("___________________________________________________________________________________________________________________");
+			System.out.println("|									|									  |										   |");
+			System.out.println("|									|									  |										   |");
+			System.out.println("|									|									  |										   |");
+			System.out.println("|									|									  |										   |");
+			System.out.println("|									|									  |										   |");
+			System.out.println("|									|									  |										   |");
+			System.out.println("|									|									  |										   |");
+			System.out.println("|									|									  |										   |");
+			System.out.println("|									|									  |										   |");
+			System.out.println("|									|									  |										   |");
+			System.out.println("|									|									  |										   |");
+			System.out.println("|									|									  |										   |");
+			System.out.println("|									|									  |										   |");
 		}
-		for (int i = 0; i < 113; ++i) 
+		if (input == 2)
 		{
-			System.out.print("_");
+			System.out.println("|							   		|									 /|										   |");
+			System.out.println("|							  	    |									/ |										   |");
+			System.out.println("|							 		|								   /  |										   |");
+			System.out.println("|									|								  /   |										   |");
+			System.out.println("|						   			|								 /    |										   |");
+			System.out.println("|						  			|								/	  |										   |");
+			System.out.println("|						 			|							   /	  |										   |");
+			System.out.println("|									|							  /		  |										   |");
+			System.out.println("|					   				|							 /	      |										   |");
+			System.out.println("|					  				|							/		  |										   |");
+			System.out.println("|					 				|						   /		  |										   |");
+			System.out.println("|									|						  /			  |										   |");
+			System.out.println("|				   					|						 /			  |										   |");
+			System.out.println("|				  					|						/			  |										   |");
+			System.out.println("|				 					|					   /			  |										   |");
+			System.out.println("__________________________________________________________/______________________________________________________");
+			System.out.println("|									|									  |										   |");
+			System.out.println("|									|									  |										   |");
+			System.out.println("|									|									  |										   |");
+			System.out.println("|									|									  |										   |");
+			System.out.println("|									|									  |										   |");
+			System.out.println("|									|									  |										   |");
+			System.out.println("|									|									  |										   |");
+			System.out.println("|									|									  |										   |");
+			System.out.println("|									|									  |										   |");
+			System.out.println("|									|									  |										   |");
+			System.out.println("|									|									  |										   |");
+			System.out.println("|									|									  |										   |");
+			System.out.println("|									|									  |										   |");
+			System.out.println("|									|									  |										   |");
+			System.out.println("___________________________________________________________________________________________________________________");
+			System.out.println("|									|									  |										   |");
+			System.out.println("|									|									  |										   |");
+			System.out.println("|									|									  |										   |");
+			System.out.println("|									|									  |										   |");
+			System.out.println("|									|									  |										   |");
+			System.out.println("|									|									  |										   |");
+			System.out.println("|									|									  |										   |");
+			System.out.println("|									|									  |										   |");
+			System.out.println("|									|									  |										   |");
+			System.out.println("|									|									  |										   |");
+			System.out.println("|									|									  |										   |");
+			System.out.println("|									|									  |										   |");
+			System.out.println("|									|									  |										   |");
 		}
-		for (int j = 0; j < 15; ++j ) 
+		if (input == 3)
 		{
-		System.out.println("|	  			 |			    			|				|");
-		}
-		for (int i = 0; i < 113; ++i) 
-		{
-			System.out.print("_");
-		}
-		for(int j =0; j< 15; ++j) 
-		{
-		System.out.println("|	  			 |			    			|				|");
-		}
-		for (int i = 0; i < 113; ++i) 
-		{
-			System.out.print("_");
+			
 		}
 		
-		//Spacing between the boards
-		
-		System.out.println(" ");
-		
-		//Displays small board
+	
 		
 		
     }
