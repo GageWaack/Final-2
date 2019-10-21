@@ -1,5 +1,4 @@
 package main;
-
 import java.util.Scanner; 
 public class Main 
 {
@@ -7,11 +6,11 @@ public class Main
     {
     	int input;
     	Scanner userInput;
-    	userInput = new Scanner(System.in);
+    	Scanner in = new Scanner(System.in);
     	
     	System.out.println("Do you want to play? 1 for yes 999 for no");
     	
-    	input = userInput.nextInt();
+    	input = in.nextInt();
     	if(input == 1)    	
     	{
     		//displaying board
@@ -26,5 +25,11 @@ public class Main
     	{
     		System.out.println("Cant read? ");
     	}
+    	
+    	
+    	
+    	
+			
+	
     }  
 }
